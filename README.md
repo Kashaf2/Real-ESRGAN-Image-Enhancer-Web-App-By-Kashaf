@@ -1,58 +1,70 @@
-# Real-ESRGAN Web UI
+Real-ESRGAN Image Enhancer Web App
+This project is a Real-ESRGAN Image Enhancer built using Streamlit, allowing users to upload images and enhance them with the power of Real-ESRGAN upscaling models. The web app allows users to:
 
-This is a web-based application that allows users to upscale images using Real-ESRGAN. The app is built using Streamlit and provides an easy-to-use interface for enhancing image resolution. Users can upload models, select upscale factors, and upload images for enhancement.
+Upload Real-ESRGAN Model (.pth): Select from supported Real-ESRGAN models, including RRDBNet and SRVGGNet, or upload custom models.
 
-## Features
-- **Upload Custom Models**: Users can upload `.pth` files to use custom Real-ESRGAN models for image enhancement.
-- **Choose Upscale Factor**: Select an upscale factor of 2x or 4x.
-- **Enhance Images**: Upload an image and enhance it with the selected model and upscale factor.
-- **Download Enhanced Image**: After enhancement, download the high-resolution image.
+Select Upscale Factor: Choose the upscale factor (2x or 4x) for image enhancement.
 
-## Installation
+Enhance Images: Upload an image and enhance it by increasing its resolution using the selected Real-ESRGAN model.
 
-### 1. Clone this repository
-Clone the repository to your local machine:
+Download Enhanced Images: Get the enhanced images for download in high-definition quality.
 
-```bash
-git clone https://github.com/Kashaf2/Real-ESRGAN-Web-UI.git
+The app supports automatic architecture detection from the .pth model file, streamlining the user experience.
 
-2. Install dependencies
-Navigate to the project directory and install the required dependencies:
+Key Features:
+Model Upload: Upload any compatible Real-ESRGAN .pth model.
 
-cd Real-ESRGAN-Web-UI
+Architecture Detection: Automatically detects the model architecture (e.g., RRDBNet, SRVGGNet) and loads the appropriate model.
+
+Image Enhancement: Easily upscale images by 2x or 4x with the Real-ESRGAN upscaling method.
+
+Streamlit Interface: Clean and simple interface for easy image enhancement.
+
+Progress Bar: View the enhancement process in real-time.
+
+Download Enhanced Image: After enhancement, users can download the upscaled image.
+
+Installation:
+To run this project locally, clone this repository and install the dependencies.
+
+Clone the repository:
+
+bash:
+git clone https://github.com/your-username/real-esrgan-image-enhancer.git
+Navigate to the project directory:
+
+bash:
+cd real-esrgan-image-enhancer
+Install the required Python dependencies:
+
+bash:
 pip install -r requirements.txt
 
-3. Install Real-ESRGAN
-To install Real-ESRGAN, follow the instructions from the Real-ESRGAN repository if not already included in the dependencies.
+Run the Streamlit app:
 
-4. Run the app
-After installing the dependencies, you can start the Streamlit app:
+bash:
 streamlit run app.py
 
-5. Upload Model and Images
-Step 1: In the sidebar, upload a .pth model file that you wish to use.
+Supported Models:
+RealESRGAN x4 (RRDBNet architecture)
 
-Step 2: Choose the upscale factor (2x or 4x).
+RealESRGAN x2 (SRVGGNet architecture)
 
-Step 3: Upload an image you want to upscale.
+Custom Real-ESRGAN models can be uploaded as well!
 
-Step 4: Click on the "Enhance Image" button to process the image.
-
-Once processed, the enhanced image will be displayed, and you can download it by clicking the download button.
-
-Contributing
-Feel free to fork the repository, create a pull request, or open an issue if you encounter any problems.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgements
-Real-ESRGAN
+Requirements:
+Python 3.7+
 
 Streamlit
 
-Feel free to customize the sections as per your project needs.
+PyTorch
 
+RealESRGAN Pretrained Models
 
+License:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
+Acknowledgments:
+Real-ESRGAN for the powerful image enhancement algorithm.
 
+Streamlit for providing an intuitive interface for building the web app.
