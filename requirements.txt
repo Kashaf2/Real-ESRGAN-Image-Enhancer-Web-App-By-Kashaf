@@ -1,6 +1,8 @@
-streamlit
-torch
-Pillow
-numpy
-basicsr
-realesrgan
+opencv-python-headless==4.5.3.56
+streamlit==1.13.0
+torch==1.11.0
+realesrgan==0.2.0
+gfpgan==1.0.0
+basicsr==0.0.1
+pillow==8.4.0
+numpy==1.21.4
