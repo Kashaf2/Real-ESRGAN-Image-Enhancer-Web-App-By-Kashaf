@@ -5,6 +5,6 @@ realesrgan==0.2.0
 gfpgan==1.0.0
 basicsr==0.0.1
 pillow==8.4.0
-numpy==1.21.4
+numpy==1.23.5  # Update to a version compatible with PyTorch 2.x
 opencv-python-headless==4.9.0.80
 
